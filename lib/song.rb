@@ -61,10 +61,14 @@ class Song
   end
 
   def self.create_from_filename(mp3)
-    # The Song.create_from_filename class method should not only parse the 
+    # The Song.create_from_filename class method should not only parse the
     # filename correctly but should also save the Song instance that was created.
     song = new_from_filename(mp3)
     song.save
   end
 
+  def self.destroy_all
+    # Should reset the state of the @@all class variable to an empty array 
+    # thereby deleting all previous song instances.
+    Song.all.clear
 end
