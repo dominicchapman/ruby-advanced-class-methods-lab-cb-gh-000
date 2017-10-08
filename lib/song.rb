@@ -44,4 +44,8 @@ class Song
     !!find_by_name(song_name) ? find_by_name(song_name) : create_by_name(song_name)
   end
 
+  def self.alphabetical
+    # Song Class Methods .alphabetical returns all the song instances in alphabetical order by song name
+  end
+
 end
