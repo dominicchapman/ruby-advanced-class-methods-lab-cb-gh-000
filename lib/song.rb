@@ -39,7 +39,7 @@ class Song
 
   def self.find_or_create_by_name(song_name)
     # Song Class Methods .find_or_create_by_name invokes .find_by_name and .create_by_name instead of repeating code
-    if find_by_name ? find_by_name : create_by_name
+    if find_by_name(song_name) ? find_by_name : create_by_name
   end
 
 end
