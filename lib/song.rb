@@ -57,8 +57,9 @@ class Song
     song = self.new
     song.name = mp3.split(/[^a-zA-Z\s]|\s-\s/)[1]
     song.artist_name = mp3.split(/[^a-zA-Z\s]|\s-\s/)[0]
-    song.save
     song
   end
+
+  
 
 end
