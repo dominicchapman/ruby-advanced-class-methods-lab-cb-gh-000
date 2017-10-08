@@ -49,4 +49,12 @@ class Song
     Song.all.sort_by { |song| song.name }
   end
 
+  def self.new_from_filename
+    # Build a class constructor that accepts a filename in the format of
+    # " - .mp3", for example "Taylor Swift - Blank Space.mp3".
+    # The constructor should return a new Song instance with the song name
+    # set to Blank Space and the artist_name set to Taylor Swift.
+    
+  end
+
 end
