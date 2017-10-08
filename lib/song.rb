@@ -41,7 +41,7 @@ class Song
     # This method will accept a string name for a song and either return a
     # matching song instance with that name or create a new song with the
     # name and return the song instance.
-    if !!find_by_name(song_name) ? find_by_name(song_name) : create_by_name(song_name)
+    !!find_by_name(song_name) ? find_by_name(song_name) : create_by_name(song_name)
   end
 
 end
