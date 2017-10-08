@@ -31,4 +31,9 @@ class Song
     song
   end
 
+  def self.find_by_name(song_name)
+    # Song Class Methods .create_by_name instantiates and saves a song with a name property
+    
+  end
+
 end
