@@ -12,9 +12,9 @@ class Song
 
   def self.create
     # Song Class Methods .create instantiates and saves the song, and it returns the new song that was created
-    # song = self.new
-    # song.saves
-    # song
+    song = self.new
+    song.saves
+    song
   end
 
 end
