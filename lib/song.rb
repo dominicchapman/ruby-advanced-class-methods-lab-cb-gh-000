@@ -25,6 +25,7 @@ class Song
   end
 
   def self.create_by_name(song_name)
+    # Song Class Methods .create_by_name instantiates and saves a song with a name property
     song = self.new
     song.name = song_name
     song.save
@@ -32,7 +33,6 @@ class Song
   end
 
   def self.find_by_name(song_name)
-    # Song Class Methods .create_by_name instantiates and saves a song with a name property
     Song.all.detect { |song| song.name == song_name }
   end
 
