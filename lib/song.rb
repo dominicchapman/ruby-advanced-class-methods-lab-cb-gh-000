@@ -17,9 +17,11 @@ class Song
     song
   end
 
-  def self.new_by_name
+  def self.new_by_name(song_name)
     # Song Class Methods .new_by_name instantiates a song with a name property
-    
+    song = self.new
+    song.name = song_name
+    song
   end
 
 end
