@@ -46,6 +46,7 @@ class Song
 
   def self.alphabetical
     # Song Class Methods .alphabetical returns all the song instances in alphabetical order by song name
+    @@all.sort
   end
 
 end
